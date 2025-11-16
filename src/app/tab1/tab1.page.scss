@@ -1,0 +1,66 @@
+// Partie Header
+ion-toolbar {
+    --background: rgb(248, 248, 253);
+}
+
+ion-title,
+span {
+    color: #110f0f;
+}
+
+a {
+    text-decoration: none;
+    color: #160505;
+}
+
+.home {
+    margin-left: 10%;
+}
+
+.connect {
+    margin-right: 10%;
+}
+
+// Partie Navigation Gp ou client
+ion-card {
+    margin-top: 10%;
+    margin: auto;
+    border-radius: 15px;
+    width: 70%;
+}
+
+.btns {
+    margin-top: 15%;
+}
+
+.client {
+    margin-top: 5%;
+}
+
+ion-card-content {
+    background-color: #EBE8E8;
+    text-align: center;
+}
+
+h1 {
+    margin-left: 5%;
+}
+
+// Partie Historique des annonces
+.annonce {
+    width: 90%;
+    height: 100px;
+    background-color: #EBE8E8;
+    border-radius: 5px;
+}
+
+hr {
+    background-color: #EBE8E8;
+    height: 3px;
+    width: 80%;
+}
+
+// Partie Apres session
+.input_search{
+    margin-left: 10%;
+}

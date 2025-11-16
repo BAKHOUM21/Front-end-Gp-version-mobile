@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <a slot="start" class="home">Home</a>
+    <a slot="end" class="connect" href="../connexion">Se connecter</a>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="avant_session">
+    <p style="text-align: center;margin-top: 20%;">Envoyez ou transporter des biens a moindre cout</p>
+    <div class="btns">
+      <ion-card class="gp">
+        <ion-card-content (click)="connecter()">Je suis GP</ion-card-content>
+      </ion-card>
+      <ion-card class="client">
+        <ion-card-content (click)="connecter()">Je suis Client</ion-card-content>
+      </ion-card>
+    </div>
+    <div class="annonces">
+      <h1>Dernieres annonces</h1>
+      <ion-row>
+        <ion-col>
+          <ion-card class="annonce">
+            <ion-card-content>Je suis Client</ion-card-content>
+          </ion-card>
+          <hr>
+        </ion-col>
+        <ion-col>
+          <ion-card class="annonce">
+            <ion-card-content>Je suis Moi</ion-card-content>
+          </ion-card>
+          <hr>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+  <div id="apres_session" hidden>
+    <div class="input_search">
+      <ion-input><ion-icon name="search"></ion-icon></ion-input>
+    </div>
+  </div>
+</ion-content>
