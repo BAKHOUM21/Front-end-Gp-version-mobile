@@ -1,0 +1,16 @@
+ <ion-header>
+    <ion-toolbar>
+      <ion-back-button defaultHref="/" slot="start"></ion-back-button>
+      <ion-title size="medium" >home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-content>
+  <h3> {{titre_annonce}} </h3>
+  <ion-card *ngFor="let annonce of annonces">
+    <ion-card-content>
+      {{annonce}}
+    </ion-card-content>
+  </ion-card>
+    <app-explore-container></app-explore-container>
+</ion-content>
+

@@ -41,4 +41,8 @@ export const routes: Routes = [
     redirectTo: '/tabs/tab1',
     pathMatch: 'full',
   },
+   {
+    path: 'home',
+    loadChildren: () => import('../home/home.page').then( m => m.HomePage)
+  },
 ];

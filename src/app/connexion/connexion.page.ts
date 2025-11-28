@@ -30,19 +30,15 @@ export class ConnexionPage {
 
   }
   connexion() {
-    console.log(this.connexionForm.value);
     const url='http://localhost:8000/api/login';
     const headers = new HttpHeaders({
       'Content-Type': 'application/json' 
       });
-    this.http.post(url, this.connexionForm.value, { headers }).subscribe({
-      next: (response: any) => {
-        console.log(response);
-        // localStorage.setItem('token', response.token);
-      },
-      error: (error) => {
-        console.error('Login error:', error);
-      }
+    this.http.post(url, this.connexionForm.value, { headers }).subscribe((response: any) => {
+        console.log(response.access_token);
+        if (response.access_token!=undefined) {
+          document.location.href="/home";
+        }
     });
   }
 }
