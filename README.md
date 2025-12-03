@@ -19,7 +19,7 @@ Optimiser les prix de façon dynamique.
 ```markdown
 # Guide d'installation : Ionic, Angular, Gradle et Docker
 
-Ce document décrit des méthodes recommandées pour installer Ionic, Angular, Gradle et Docker sur macOS, Windows et Linux (Ubuntu). Il suppose que tu as accès à un terminal et, pour Node.js/npm, qu'il est préférable d'utiliser nvm (Node Version Manager) afin de gérer proprement les versions de Node.
+ Il suppose que tu as accès à un terminal et, pour Node.js/npm, qu'il est préférable d'utiliser nvm (Node Version Manager) afin de gérer proprement les versions de Node.
 
 ---
 
@@ -172,7 +172,6 @@ Remarque : Docker Desktop remplace l'installation manuelle de Docker Engine sur 
   docker --version
   docker compose version
   docker run --rm hello-world
-
 ---
 
 ## 6) Dépannage rapide
@@ -183,14 +182,6 @@ Remarque : Docker Desktop remplace l'installation manuelle de Docker Engine sur 
 - Gradle pour Android : préférer le gradle wrapper (`./gradlew`) fourni par le projet.
 
 ---
-
-Si tu veux, je peux :
-- Fournir un script d'installation automatisé pour Ubuntu.
-- Rédiger une checklist pour configurer un poste de dev mobile (Android/iOS) complet pour Ionic.
-- Te donner des instructions précises pour Windows (PowerShell) si tu es sur Windows.
-```
-
-
 Pour Lancer l'application :
 
 On tape la commande : ionic serve
