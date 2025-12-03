@@ -189,3 +189,8 @@ Si tu veux, je peux :
 - Rédiger une checklist pour configurer un poste de dev mobile (Android/iOS) complet pour Ionic.
 - Te donner des instructions précises pour Windows (PowerShell) si tu es sur Windows.
 ```
+
+
+Pour Lancer l'application :
+
+On tape la commande : ionic serve
