@@ -19,7 +19,7 @@ export class InscriptionPage {
       password: new FormControl('', [Validators.required]),
       confirm_password: new FormControl('', [Validators.required]),
       phone: new FormControl('', [Validators.required, Validators.pattern('^[0-9]{10}$')]),
-      role: "admin"
+      role: "gp"
     });
   }
   inscrire() {

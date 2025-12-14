@@ -7,10 +7,14 @@
 <ion-content>
   <h3> {{titre_annonce}} </h3>
   <ion-card *ngFor="let annonce of annonces">
+  
     <ion-card-content>
-      {{annonce}}
+      <h5>Nombre de Kilos dispo: {{ annonce.kilos_disponibles }}</h5>
+      <h5>Date de départ: <br>{{ annonce.date_depart }}</h5>
+      <h5>Date d'arrivée: <br>{{ annonce.date_arrivee }}</h5>
+      <h5>Description: <br>{{ annonce.description }}</h5>
+      <h5>Destination: <br>{{ annonce.destination }}</h5>
     </ion-card-content>
   </ion-card>
-    <app-explore-container></app-explore-container>
 </ion-content>
 

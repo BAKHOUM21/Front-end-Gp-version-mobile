@@ -18,18 +18,18 @@
     </div>
     <div class="annonces">
       <h1>Dernieres annonces</h1>
-      <ion-row>
+      <ion-row *ngFor="let annonce of annonces">
         <ion-col>
-          <ion-card class="annonce">
-            <ion-card-content>Je suis Client</ion-card-content>
+          <ion-card >
+            <ion-card-content>
+              <h5>Nombre de Kilos dispo: {{ annonce.kilos_disponibles }}</h5>
+              <h5>Date de départ: <br>{{ annonce.date_depart }}</h5>
+              <h5>Date d'arrivée: <br>{{ annonce.date_arrivee }}</h5>
+              <h5>Description: <br>{{ annonce.description }}</h5>
+              <h5>Destination: <br>{{ annonce.destination }}</h5>
+            </ion-card-content>
           </ion-card>
-          <hr>
-        </ion-col>
-        <ion-col>
-          <ion-card class="annonce">
-            <ion-card-content>Je suis Moi</ion-card-content>
-          </ion-card>
-          <hr>
+         
         </ion-col>
       </ion-row>
     </div>

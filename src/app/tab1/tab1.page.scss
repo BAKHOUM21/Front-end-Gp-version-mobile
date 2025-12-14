@@ -7,7 +7,9 @@ ion-title,
 span {
     color: #110f0f;
 }
-
+ion-row{
+    margin-top: 2%;
+}
 a {
     text-decoration: none;
     color: #160505;
@@ -52,10 +54,14 @@ h1 {
     height: 100px;
     background-color: #EBE8E8;
     border-radius: 5px;
+    padding-bottom: 3%;
 }
-
+h5{
+    text-align: left;
+}
 hr {
     background-color: #EBE8E8;
+    margin-top: 2%;
     height: 3px;
     width: 80%;
 }

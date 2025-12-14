@@ -2,7 +2,7 @@ import { Component, EnvironmentInjector, inject } from '@angular/core';
 import { IonTabs, IonTabBar, IonTabButton, IonIcon } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { triangle, ellipse, square, home, add, person, settings, chatbox, search } from 'ionicons/icons';
-
+import { HomePage } from '../home/home.page';
 @Component({
   selector: 'app-tabs',
   templateUrl: 'tabs.page.html',

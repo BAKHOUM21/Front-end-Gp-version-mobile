@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
-
+import { HomePage } from '../home/home.page';
 export const routes: Routes = [
   {
     path: 'tabs',
@@ -40,9 +40,5 @@ export const routes: Routes = [
     path: '',
     redirectTo: '/tabs/tab1',
     pathMatch: 'full',
-  },
-   {
-    path: 'home',
-    loadChildren: () => import('../home/home.page').then( m => m.HomePage)
   },
 ];

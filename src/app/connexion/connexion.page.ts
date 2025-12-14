@@ -37,7 +37,8 @@ export class ConnexionPage {
     this.http.post(url, this.connexionForm.value, { headers }).subscribe((response: any) => {
         console.log(response.access_token);
         if (response.access_token!=undefined) {
-          document.location.href="/home";
+         localStorage.setItem('tokenCon', response.access_token);
+         document.location.href="/home";
         }
     });
   }

@@ -1,24 +1,42 @@
-
 <ion-content [fullscreen]="true">
-  <ion-header >
+  <ion-header>
     <ion-toolbar>
       <ion-back-button defaultHref="/" slot="start"></ion-back-button>
       <ion-title size="medium">Search</ion-title>
     </ion-toolbar>
   </ion-header>
-<ion-card>
-    <ion-item>
-      <ion-label position="floating">Lieu de depart</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Lieu d'arrivee</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-    <ion-item>
-      <!-- <ion-label position="floating">Date d'envoi</ion-label> -->
-      <ion-input type="date"></ion-input>
-    </ion-item>
-    <ion-button expand="full" style="margin-top: 20px; --background: #3880ff;">Envoyer</ion-button>
+  <ion-card>
+    <div [formGroup]="ajoutAnnonces">
+      <ion-item>
+        <ion-label position="floating">Origine</ion-label>
+        <ion-input formControlName="origine"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Destination</ion-label>
+        <ion-input formControlName="destination"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Description</ion-label>
+        <ion-input formControlName="description"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Prix du kilo</ion-label>
+        <ion-input type="number" formControlName="prix_du_kilo"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Kilos disponible</ion-label>
+        <ion-input type="number" formControlName="kilos_disponibles"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floated" slot="start">Date de depart</ion-label>
+        <ion-input type="date" slot="end" formControlName="date_depart"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floated" slot="start">Date d'arrivee</ion-label>
+        <ion-input type="date" slot="end" formControlName="date_arrivee"></ion-input>
+      </ion-item>
+      <ion-button expand="full" style="margin-top: 20px; --background: #3880ff;"
+        type="submit" (click)="ajout_annonces()">Envoyer</ion-button>
+    </div>
   </ion-card>
 </ion-content>
