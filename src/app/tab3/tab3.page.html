@@ -1,24 +1,47 @@
-
+<!-- Ajout d'une annonce -->
 <ion-content [fullscreen]="true">
   <ion-header >
     <ion-toolbar>
       <ion-back-button defaultHref="/" slot="start"></ion-back-button>
-      <ion-title size="medium">Search</ion-title>
+      <ion-title size="medium">Ajout Annonce</ion-title>
     </ion-toolbar>
   </ion-header>
-<ion-card>
-    <ion-item>
-      <ion-label position="floating">Lieu de depart</ion-label>
-      <ion-input></ion-input>
+<ion-card >
+  <form [formGroup]="ajoutAnnonce">
+  <ion-item>
+      <ion-label position="floating">Kilos disponibles</ion-label>
+      <ion-input type="number" formControlName="kilos_disponibles"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="floating">Lieu d'arrivee</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-label position="floating">Date depart</ion-label>
+      <ion-input type="date" formControlName="date_depart"></ion-input>
     </ion-item>
     <ion-item>
-      <!-- <ion-label position="floating">Date d'envoi</ion-label> -->
-      <ion-input type="date"></ion-input>
+      <ion-label position="floating">Date d'arrivee</ion-label>
+      <ion-input type="date" formControlName="date_arrivee"></ion-input>
     </ion-item>
-    <ion-button expand="full" style="margin-top: 20px; --background: #3880ff;">Envoyer</ion-button>
+    <ion-item>
+      <ion-label position="floating">Description</ion-label>
+      <ion-input type="text" formControlName="description"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Prix du kilo</ion-label>
+      <ion-input type="number" formControlName="prix_du_kilo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Prix par piece</ion-label>
+      <ion-input type="number" formControlName="prix_par_piece"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Origine</ion-label>
+      <ion-input type="text" formControlName="origin"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Destination</ion-label>
+      <ion-input type="text" formControlName="destination"></ion-input>
+    </ion-item>
+    <ion-button expand="full" style="margin-top: 20px; --background: #3880ff;" (click)="onSubmit()">Envoyer</ion-button>
+     </form>
   </ion-card>
+ 
 </ion-content>

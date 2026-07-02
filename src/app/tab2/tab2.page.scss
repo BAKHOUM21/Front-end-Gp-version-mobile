@@ -1,3 +1,17 @@
-ion-back-button{
+ion-back-button {
     color: red;
+}
+ion-title {
+    text-align: center;
+}
+ion-img {
+    width: 70px;
+    /* Définissez la largeur souhaitée */
+    height: 70px;
+    /* La hauteur doit être identique à la largeur */
+    border-radius: 50%;
+    /* Arrondit les coins pour former un cercle */
+    object-fit: cover;
+    /* Évite que l'image ne soit déformée */
+    float:inline-end
 }

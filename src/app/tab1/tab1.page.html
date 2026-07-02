@@ -9,25 +9,24 @@
   <div id="avant_session">
     <p style="text-align: center;margin-top: 20%;">Envoyez ou transporter des biens a moindre cout</p>
     <div class="btns">
-      <ion-card class="gp">
+      <ion-card class="gp" id="gp">
         <ion-card-content (click)="connecter()">Je suis GP</ion-card-content>
       </ion-card>
-      <ion-card class="client">
+      <ion-card class="client" id="admin">
         <ion-card-content (click)="connecter()">Je suis Client</ion-card-content>
       </ion-card>
     </div>
     <div class="annonces">
       <h1>Dernieres annonces</h1>
       <ion-row>
-        <ion-col>
-          <ion-card class="annonce">
-            <ion-card-content>Je suis Client</ion-card-content>
-          </ion-card>
-          <hr>
-        </ion-col>
-        <ion-col>
-          <ion-card class="annonce">
-            <ion-card-content>Je suis Moi</ion-card-content>
+        <ion-col *ngFor="let p of annonces">
+          <ion-card class="annonce" id="det_annonce" (click)="det_annonces(p.id)">
+            <h4>Client: {{ p.id }}</h4>
+            <ion-card-content>
+              <h5>Origine: {{ p.origin }}</h5>
+              <h5>Destination: {{ p.destination }}</h5>
+              <h5>Description: {{ p.description}}</h5>
+            </ion-card-content>
           </ion-card>
           <hr>
         </ion-col>

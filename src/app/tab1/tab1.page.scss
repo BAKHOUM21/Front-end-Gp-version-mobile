@@ -49,11 +49,17 @@ h1 {
 // Partie Historique des annonces
 .annonce {
     width: 90%;
-    height: 100px;
+    height: 140px;
     background-color: #EBE8E8;
     border-radius: 5px;
+    
 }
-
+h4{
+    text-align:center;
+}
+h5{
+    text-align:left;
+}
 hr {
     background-color: #EBE8E8;
     height: 3px;

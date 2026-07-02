@@ -3,9 +3,19 @@
   <ion-header>
     <ion-toolbar>
       <ion-back-button slot="start" defaultHref="/"></ion-back-button>
-      <ion-title size="medium">Tab 5</ion-title>
+      <ion-title size="medium">Mon profil</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 5 page"></app-explore-container>
+<ion-card>
+    <ion-card-header>
+      <ion-card-title>Profil</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Nom: {{ profile.nom }}</p>
+      <p>Role: {{ profile.role }}</p>
+      <p>Adresse: {{ profile.adresse }}</p>
+      <p>Nationalité: {{ profile.nationalite }}</p>
+      <p>Téléphone: {{ profile.telephone }}</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -3,9 +3,22 @@
   <ion-header>
     <ion-toolbar>
       <ion-back-button defaultHref="/" slot="start"></ion-back-button>
-      <ion-title size="medium">Tab 2</ion-title>
+      <ion-title size="medium">Messagerie</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card *ngFor="let item of items">
+    <ion-card-header>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-row>
+        <ion-col>
+          <p float-start>{{ item.message }}</p>
+        </ion-col>
+        <ion-col>
+          <ion-img src="{{ item.url }}" ></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -17,10 +17,11 @@
           <ion-input type="password" formControlName="password"></ion-input>
         </ion-item>
         <ion-button expand="full" style="margin-top: 20px;border-radius: 15px; --background: #EBE8E8;color: #09090a;"
-          type="submit" (click)="connexion()">Se Connecter</ion-button>
+          type="btn" (click)="connexion()" id="conn">Se Connecter</ion-button>
         <ion-button expand="full" style="margin-top: 20px;border-radius: 15px; --background: #09090a;"
           href="../inscription">S'inscrire</ion-button>
       </form>
+      <p id="role_gp"></p>
     </ion-card-content>
 
   </ion-card>
