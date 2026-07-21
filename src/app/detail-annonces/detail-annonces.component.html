@@ -2,11 +2,78 @@
 <ion-header>
   <ion-toolbar>
     <ion-back-button defaultHref="/" slot="start"></ion-back-button>
-    <ion-title size="medium">Connexion</ion-title>
+    <ion-title size="medium">Details annonces</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <p>
-    Detail-annonces works!
-  </p>
+  <ion-card>
+    <ion-card-header>
+      <!-- <ion-card-title>{{ annonce }}</ion-card-title> -->
+    </ion-card-header>
+    <ion-card-content>
+      <div class="row mt-3">
+        <table class="table table-striped  text-center">
+          <tr class="profil">
+              <td class="photo">Photo</td>
+              <td class="nom text-center mt-3" colspan="2">John Doe</td>
+          </tr>
+          <tr>
+            <td class="">{{annonce.description}}</td>
+            <td class="text-primary" colspan="2"></td>
+          </tr>
+          <tr>
+            <td class="text-primary" colspan="2">Depart</td>
+            <td class="text-primary" colspan="2">Date Depart</td>
+          </tr>
+          <tr class="bg-secondary text-light">
+            <td colspan="2" class="border-1">Dakar</td>
+            <td colspan="2" class="border-1">{{annonce.date_depart}}</td>
+          </tr>
+          <tr>
+            <td class="text-primary border-1" colspan="2">Arrivée</td>
+            <td class="text-primary border-1" colspan="2">Date Arrivée</td>
+          </tr>
+          <tr class="bg-secondary text-light">
+            <td colspan="2" class="border-1">{{annonce.destination}}</td>
+            <td colspan="2" class="border-1">{{annonce.date_arrivee}}</td>
+
+          </tr>
+          <tr class="text-primary">
+            <td class="text-small" colspan="2">Details marchandises:</td>
+            <td class="text-small">Prix/Kg(FCFA)</td>
+            <td class="text-small">Nombre de Kg:</td>
+          </tr>
+          <tr class="bg-secondary border-1 text-light">
+            <td colspan="2" class="border-1">Tissus</td>
+            <td>150</td>
+            <td>30</td>
+          </tr>
+          <tr class=" text-dark">
+            <td colspan="2">Marchandises spéciales</td>
+            <td>Prix pièce</td>
+            <td></td>
+          </tr>
+          <tr class="text-light">
+            <td class="bg-secondary border-1" colspan="2">Vêtements</td>
+            <td class="bg-secondary border-1">200</td>
+            <td></td>
+          </tr>
+          <hr>
+          <tr>
+            <td>Total</td>
+            <td colspan="2" class="text-end">15000 FCFA</td>
+          </tr>
+          <br>
+          <tr>
+            <td colspan="12" class="text-center">
+              <div class="btn btn-secondary bg-secondary text-light">
+                Reserver
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>

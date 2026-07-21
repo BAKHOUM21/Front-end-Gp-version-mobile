@@ -1,0 +1,22 @@
+.profil{
+    padding:5%;
+    padding-bottom: 5%;
+}
+.nom{
+    padding: 5%;
+    float:inline-end;
+    color: rgb(214, 198, 198);
+}
+.photo{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(114, 114, 116);
+    padding: 5%;
+    color: white;
+}
+.col{
+    display:inline-flex;
+    margin-left: 15%;
+    text-align: inline;
+}
