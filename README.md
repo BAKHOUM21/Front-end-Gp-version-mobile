@@ -2,15 +2,15 @@
 =======================================================================
                         Technologies utilisées
 =======================================================================
-#Ionic: 
+# Ionic: 
     version 7.2.1
-#Angular: 
+# Angular: 
     version 20.3.10
-#NodeJs
+# NodeJs
     Version v24.11.0
-#GRADLE
+# GRADLE
     Version: 8.14.2
         Kotlin: 2.0.21
         Groovy: 3.0.24
-#JAVA
+# JAVA
     jdk: 21.0.10
