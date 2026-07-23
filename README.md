@@ -1,7 +1,5 @@
 # Front-en-Gp-Derniere version
-=====================================================
-                        Technologies utilisées
-======================================================
+## Technologies utilisées
 # Ionic: 
     version 7.2.1
 # Angular: 
